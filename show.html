@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://fiddle.jshell.net/SJkmh/15/show/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="fonts/styles.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+  
+
+  
+
+  
+  
+    
+      <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+    
+  
+
+  <style type="text/css">
+    section {
+    height: 700px;
+    margin: 0;
+    background: red; 
+}
+ul {
+    position: fixed;
+}
+li {
+    list-style: none;
+    width: 100px;
+    height: 20px;
+}
+li a {
+    display: block;
+    width: 100px;
+    margin: 2px;
+    height: 20px;
+    background: blue;
+    color: white;
+    text-decoration: none
+}
+li.active a {
+    background: green;
+}
+body {
+    padding-bottom: 800px;
+}
+
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+$(window).load(function(){
+
+
+$(document).ready(function(){
+        // $('section').waypoint(function(direction) {
+        //     var activeSection = $(this);
+            
+        //     //var activeSection = $(this);
+        //     var sectionId = activeSection.attr('id');
+        //     console.log(sectionId);
+        //         //window.location.hash = sectionId;
+        //        // alert(sectionId);
+
+        //     // if(direction === 'down'){
+        //     //     activeSection = $(this).next();
+        //     //     sectionId = activeSection.attr('id');
+        //     //     window.location.hash = sectionId;
+        //     // }
+        //     // if(direction === 'up'){
+        //     //     activeSection = $(this).prev();
+        //     //     sectionId = activeSection.attr('id');
+        //     //     window.location.hash = sectionId;
+        //     // }
+        //     //activeSection = $(this);
+            
+
+        //     // console.log(activeSection.attr('id'));
+
+        //     // $('ul li').removeClass('active');
+        //     // $('ul li.' + sectionId).addClass('active');
+        //     // console.log(this.id);
+        // });
+
+
+    var waypoint0 = $('section').waypoint({
+        element: this,
+        handler: function(direction) {
+          var ID = this.element.id;
+          window.location.hash = this.element.id;
+        }
+    });
+    
+
+
+});	
+
+$('a').click(function(e) {
+      //e.preventDefault();
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+
+        //window.location.hash = $(this).attr('href');
+
+        console.log(target);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+              }, 500);
+            }
+      }
+});
+
+
+});//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <ul>
+    <li class="test1 active"><a href="#test1">1</a></li>
+    <li class="test2"><a href="#test2">2</a></li>
+    <li class="test3"><a href="#test3">3</a></li>
+    <li class="test4"><a href="#test4">4</a></li>
+    <li class="test5"><a href="#test5">5</a></li>
+</ul>
+<section id="test1" style="margin: 1px 0 0 0;">1</section>
+<section id="test2">2</section>
+<section id="test3">3</section>
+<section id="test4">4</section>
+<section id="test5">5</section>
+  
+</body></html>

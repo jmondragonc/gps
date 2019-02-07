@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'Foco-Regular';
+  src: url('Foco-Regular.eot?#iefix') format('embedded-opentype'),  url('Foco-Regular.woff') format('woff'), url('Foco-Regular.ttf')  format('truetype'), url('Foco-Regular.svg#Foco-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Foco-Bold';
+  src: url('Foco-Bold.eot?#iefix') format('embedded-opentype'),  url('Foco-Bold.woff') format('woff'), url('Foco-Bold.ttf')  format('truetype'), url('Foco-Bold.svg#Foco-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
